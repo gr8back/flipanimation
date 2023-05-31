@@ -36,3 +36,80 @@
     transform: rotate(360deg);
   }
 }
+
+.zapp {
+  height: auto;
+  width: 100vw;
+  background: white;
+  position: relative;
+  overflow: auto;
+  padding: 30px;
+  z-index: 1;
+  /* Hide the app on load */
+  /*visibility: hidden;*/
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2% 3.6%;
+  padding: 10px;
+}
+
+.item {
+  cursor: pointer;
+  font-size: 0;
+}
+
+.item img {
+  width: 300px;
+  height: auto;
+}
+
+
+.detail {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  z-index: 100;
+  width: 90.1vmin;
+  cursor: pointer;
+  height: max-content;
+  font-size: 0;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.detail > img {
+  position: relative;
+  z-index: 1;
+}
+
+.detail .content {
+  background: #232323;
+  padding: 2rem 1.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  flex-grow: 1;
+  color: white;
+}
+
+.detail .content > * {
+  margin-bottom: 1rem;
+}
+
+.detail .title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.detail .secondary {
+  color: lightgray;
+}
+
+.detail .description {
+  line-height: 1.5;
+}
