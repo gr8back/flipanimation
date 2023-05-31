@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## flipanimation.js
+## React App with Flip animation - flipanimation.js
 
 This script is a flip animation with React.  Might be useful as a gallery widget.  Can be used with
 mulitiple different easings listed on gsap docs: 
